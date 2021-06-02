@@ -1,0 +1,13 @@
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\bin\Debug\netcoreapp2.1\Demo.deps.json
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\bin\Debug\netcoreapp2.1\Demo.runtimeconfig.json
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\bin\Debug\netcoreapp2.1\Demo.runtimeconfig.dev.json
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\bin\Debug\netcoreapp2.1\Demo.dll
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\bin\Debug\netcoreapp2.1\Demo.pdb
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.csproj.CoreCompileInputs.cache
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.RazorAssemblyInfo.cache
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.RazorAssemblyInfo.cs
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.AssemblyInfoInputs.cache
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.AssemblyInfo.cs
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.RazorTargetAssemblyInfo.cache
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.dll
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.pdb
