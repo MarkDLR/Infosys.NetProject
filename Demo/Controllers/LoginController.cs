@@ -23,7 +23,7 @@ namespace Demo
 
         [HttpGet]
         [Route("login")]
-        public int SimulateSale()
+        public int Login()
         {
             int success = 0;
             using (var connection = new SqlConnection())
