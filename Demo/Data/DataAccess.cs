@@ -8,7 +8,7 @@ namespace Demo
     public class DataAccess
     {
         private System.Data.IDbConnection connection;
-        private readonly string storedProc_VerifyLogin = "VerifyLogin";
+        private readonly string storedProc_VerifyLogin = "GetDemoLoginInfo";
     
 
         public DataAccess()
@@ -22,7 +22,7 @@ namespace Demo
         }
 
         #region DbActions
-        internal bool VerifyLoginFromDb()
+        internal bool VerifyLoginFromDb(string userName, string password)
         {
             bool success = false;
 
@@ -31,6 +31,34 @@ namespace Demo
             {
                 command.CommandText = storedProc_VerifyLogin;
                 command.CommandType = System.Data.CommandType.StoredProcedure;
+
+  // Add input parameter.
+
+                SqlParameter parameterNameOf = new SqlParameter();
+
+        parameterNameOf.ParameterName = "@UserName";
+
+                parameterNameOf.SqlDbType = SqlDbType.VarChar;
+
+                parameterNameOf.Direction = ParameterDirection.Input;
+
+                parameterNameOf.Value = userName;
+
+                // Add input parameter.
+
+                SqlParameter parameterTotalMade = new SqlParameter();
+
+        parameterTotalMade.ParameterName = "@Password";
+
+                parameterTotalMade.SqlDbType = SqlDbType.VarChar;
+
+                parameterTotalMade.Direction = ParameterDirection.Input;
+
+                parameterTotalMade.Value = password;                 command.Parameters.Add(parameterNameOf);
+
+                command.Parameters.Add(parameterTotalMade);
+
+
 
                 using (System.Data.IDataReader reader = command.ExecuteReader())
                 {

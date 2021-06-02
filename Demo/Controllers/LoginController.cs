@@ -21,7 +21,7 @@ namespace Demo
         
 
         [HttpGet]
-        [Route("simulateSale")]
+        [Route("login")]
         public int SimulateSale()
         {
             int success = 0;
@@ -31,7 +31,7 @@ namespace Demo
 
                 context = new DataAccess(connection);
 
-                if (context.VerifyLoginFromDb())
+                if (context.VerifyLoginFromDb("test","password"))
                     success = 1;
             };
 

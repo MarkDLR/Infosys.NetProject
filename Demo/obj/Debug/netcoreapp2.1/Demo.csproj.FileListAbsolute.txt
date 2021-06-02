@@ -11,3 +11,4 @@ C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\net
 C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.RazorTargetAssemblyInfo.cache
 C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.dll
 C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.pdb
+C:\Users\Jawzz\Desktop\Infosys\Projects\LoginServiceDemo\Demo\Demo\obj\Debug\netcoreapp2.1\Demo.csprojAssemblyReference.cache
