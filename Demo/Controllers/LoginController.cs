@@ -10,7 +10,8 @@ namespace Demo
     [Route("[controller]")]
     public class LoginController : ControllerBase
     {
-        private readonly string cstring = @"Data Source=(localdb)\MSSQLLocalDB;Database=Demo;Integrated Security=True";
+        private readonly string cstring = @"Server=DESKTOP-9S11UIB;Database=Demo;Trusted_Connection=True";
+
         private DataAccess context;
      
 
@@ -31,7 +32,7 @@ namespace Demo
 
                 context = new DataAccess(connection);
 
-                if (context.VerifyLoginFromDb("test","password"))
+                if (context.VerifyLoginFromDb("AGoerlich","password2"))
                     success = 1;
             };
 

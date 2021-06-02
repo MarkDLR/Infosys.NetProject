@@ -54,19 +54,24 @@ namespace Demo
 
                 parameterTotalMade.Direction = ParameterDirection.Input;
 
-                parameterTotalMade.Value = password;                 command.Parameters.Add(parameterNameOf);
+                parameterTotalMade.Value = password;
+
+                SqlParameter returnValue = new SqlParameter();
+                returnValue.Direction = ParameterDirection.ReturnValue;
+
+
+                command.Parameters.Add(returnValue);
+                command.Parameters.Add(parameterNameOf);
 
                 command.Parameters.Add(parameterTotalMade);
 
 
 
-                using (System.Data.IDataReader reader = command.ExecuteReader())
-                {
-                    if (reader.RecordsAffected > 0)
-                    {
-                        success = true;
-                    }
-                }
+                command.ExecuteNonQuery();
+
+                success = 1 == (int)returnValue.Value;
+                    
+                
             }
 
             return success;
