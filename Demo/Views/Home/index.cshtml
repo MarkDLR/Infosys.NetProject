@@ -1,4 +1,10 @@
-﻿<!doctype html>
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,193 +14,204 @@
     <!-- Bootstrap CSS -->
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <link rel="stylesheet" href="site.css" />
 
 </head>
 
 <body>
- 
-  <nav class="navbar navbar-light bg-dark-blue">
-   
-    <div class="container-fluid">
-      <div class="row justify-content-between">
-    <div class="col-4">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-     <div class="col-4">
-       <div class="container d-inline-flex">
-          <div class="label text-white my-2">Sign In</div>
-      
-          <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
-      <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-    </svg>
-  </button>
-</div>
-</div>
 
-  <div class="col-12">
-      <h2 class="main-info alert alert-dark text-center mx-auto bg-transparent lh-lg border-0">
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p> <span class="text-light">Have you been affected by COVID-19? Visit our 
-              <a class="text-light-blue" href="https://www.spservicing.com/DisasterManagement">COVID-19 Assistance</a> page for information and help.</span></p>
-          </blockquote>
-          
-        </figure>
-       
-        <span class="text-light-blue">WE</span> <span class="text-white">ARE HERE FOR</span> <span class="text-light-blue">YOU</span>
-      </h2>
-    </div>
-    </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-light bg-dark-blue">
 
-  <div class="alert alert-dark text-center m-4" role="alert">
-    Per IRS regulations, all 1098 year-end statements will be mailed no later than January 31st. Year-end information will be available via our automated phone system on January 2nd, 2021. Year-end statements can be obtained from our website after February 10th, 2021. Log into your account to view or print a copy of your statement.
-    If you have been affected by a natural disaster, we are here to help. We recommend that you first file a claim with your insurance company, then call us at 888.818.6032 so we can assist you.
-  </div>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <div class="container d-inline-flex">
+                        <div class="label text-white my-2">Sign In</div>
 
-  <div class="row row-cols-4 g-4 m-2">
-    <div class="col">
-      <div class="card">
-        <img src="~/Assets/svg_1.svg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button> 
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="~/Assets/svg_2.svg" class="card-img-top" alt="...">
+                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-        <div class="card-body">
-         <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="~/Assets/svg_3.svg" class="card-img-top" alt="...">
+                <div class="col-12">
+                    <h2 class="main-info alert alert-dark text-center mx-auto bg-transparent lh-lg border-0">
+                        <figure class="text-center">
+                            <blockquote class="blockquote">
+                                <p>
+                                    <span class="text-light">
+                                        Have you been affected by COVID-19? Visit our
+                                        <a class="text-light-blue" href="https://www.spservicing.com/DisasterManagement">COVID-19 Assistance</a> page for information and help.
+                                    </span>
+                                </p>
+                            </blockquote>
 
-        <div class="card-body">
-          <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>      </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="~/Assets/svg_4.svg" class="card-img-top" alt="...">
+                        </figure>
 
-        <div class="card-body">
-         <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>         </div>
-      </div>
-    </div>
-    <div class="col">
-        <img src="svg_5.svg" class="card-img-top" alt="...">
-        <div class="card">
-        <div class="card-body">
-         <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="svg_6.svg" class="card-img-top" alt="...">
-        <div class="card-body">
-         <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="svg_7.svg" class="card-img-top" alt="...">
-        <div class="card-body">
-         <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="svg_8.svg" class="card-img-top" alt="...">
-        <div class="card-body">
-         <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>         </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title border-0 m-auto" id="exampleModalLabel">ACCESS YOUR ACCOUNT</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-
-     
-        @using (Html.BeginForm("Login", "Login", FormMethod.Post))
-        {
-        <form>
-          <div class="mb-3">
-            <div class="row d-flex">
-              <div class="col-3"> <label for="exampleInputEmail1" class="form-label">USERNAME</label></div>
-              <div class="col-9"> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></div>
+                        <span class="text-light-blue">WE</span> <span class="text-white">ARE HERE FOR</span> <span class="text-light-blue">YOU</span>
+                    </h2>
+                </div>
             </div>
-           
-           
-          </div>
-          <div class="mb-3">
-            <div class="row d-flex">
-              <div class="col-3"><label for="exampleInputPassword1" class="form-label">PASSWORD</label></div>
-              <div class="col-9">  <input type="password" class="form-control" id="exampleInputPassword1"></div>
-            </div>
-            
-           
-          </div>
-          <div class="mb-3">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">CUSTOMER</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">THIRD PARTY</label>
-          </div>
-        
-        </div>  
-        <div class="mb-3">
-          <a href="">FORGOT USERNAME/PASSWORD</a>
         </div>
-        <div class="modal-footer">
-          <ul class="list-group list-group-horizontal">
-            <li class="list-group-item">
-              <button type="submit" class="btn btn-primary">SIGN IN</button>
-            </li>
-            <li class="list-group-item">
-  
-          <button type="submit" class="btn btn-primary">NEW USER SIGNUP</button>
-  
-            </li>
-            <li class="list-group-item">
-  
-          <button type="submit" class="btn btn-primary">MAKE A PAYMENT</button>
-  
-            </li>
-          </ul>
-          
-        </div>
-        </form>
-      }
-      </div>
-   
+    </nav>
+
+    <div class="alert alert-dark text-center m-4" role="alert">
+        Per IRS regulations, all 1098 year-end statements will be mailed no later than January 31st. Year-end information will be available via our automated phone system on January 2nd, 2021. Year-end statements can be obtained from our website after February 10th, 2021. Log into your account to view or print a copy of your statement.
+        If you have been affected by a natural disaster, we are here to help. We recommend that you first file a claim with your insurance company, then call us at 888.818.6032 so we can assist you.
     </div>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <div class="row row-cols-4 g-4 m-2">
+        <div class="col">
+            <div class="card">
+                <img src="~/Assets/svg_1.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="~/Assets/svg_2.svg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="~/Assets/svg_3.svg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="~/Assets/svg_4.svg" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <img src="svg_5.svg" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="svg_6.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="svg_7.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="svg_8.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary w-100">MAKE A PAYMENT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title border-0 m-auto" id="exampleModalLabel">ACCESS YOUR ACCOUNT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+
+                    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                    {
+                        <form>
+                            <div class="mb-3">
+                                <div class="row d-flex">
+                                    <div class="col-3"> <label for="exampleInputEmail1" class="form-label">USERNAME</label></div>
+                                    <div class="col-9"> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></div>
+                                </div>
+
+
+                            </div>
+                            <div class="mb-3">
+                                <div class="row d-flex">
+                                    <div class="col-3"><label for="exampleInputPassword1" class="form-label">PASSWORD</label></div>
+                                    <div class="col-9">  <input type="password" class="form-control" id="exampleInputPassword1"></div>
+                                </div>
+
+
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">CUSTOMER</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">THIRD PARTY</label>
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <a href="">FORGOT USERNAME/PASSWORD</a>
+                            </div>
+                            <div class="modal-footer">
+                                <ul class="list-group list-group-horizontal">
+                                    <li class="list-group-item">
+                                        <button type="submit" class="btn btn-primary">SIGN IN</button>
+                                    </li>
+                                    <li class="list-group-item">
+
+                                        <button type="submit" class="btn btn-primary">NEW USER SIGNUP</button>
+
+                                    </li>
+                                    <li class="list-group-item">
+
+                                        <button type="submit" class="btn btn-primary">MAKE A PAYMENT</button>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </form>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 
 </html>
